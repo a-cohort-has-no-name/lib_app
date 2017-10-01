@@ -1,0 +1,14 @@
+<h1>New Library</h1>
+
+<%= form_tag "/libraries", method: :post do %>
+  <div>
+    <%= text_field_tag :name, nil, placeholder: "Name" %>
+  </div>
+  <div>
+    <%= number_field_tag :floor_count, nil, placeholder: "Floor Count" %>
+  </div>
+  <div>
+    <%= number_field_tag :book_count, nil, placeholder: "Book Count" %>
+  </div>
+  <%= submit_tag "Add Library" %>
+<% end %>
